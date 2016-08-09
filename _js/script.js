@@ -1,17 +1,44 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+$(document).ready(function(){
+	function sayHello(){
+		document.write('Hello!');
+	}
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+$("#btn1").click(function(){
+        $("#box").animate({height: "600px"});
+    });
+    $("#btn2").click(function(){
+        $("#box").animate({height: "100px"});
+    });
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
+
+
+
+}); 
+alert("hello!");
+
+
+
+// var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";
+//   }
+//   x[slideIndex-1].style.display = "block";
+// }
+
+// $(document).ready(function(){
+//     $("#flip").click(function(){
+//         $("#panel").slideDown("slow");
+//     });
+// });
+
